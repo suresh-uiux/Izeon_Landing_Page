@@ -1,0 +1,565 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body{
+    font-family: "Inter", sans-serif;
+}
+
+.dot{
+     color: #172767;
+     font-size: 22px;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 600;
+}
+header{
+    width: 100%;
+    height: 750px;
+    background: url('images/bg.jpg'), center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.index{
+    width: 100%;
+    height: 750px;
+    background-color: rgba(1,0,80,0.8);
+}
+
+.navbar{
+    top: 50px;
+    padding: 10px;
+}
+
+.nav-link{
+    font-family: 'Atkinson Hyperlegible' sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #172767 !important;
+
+}
+
+.home-page{
+     padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    grid-template-areas:  
+    'one two';
+}
+
+
+.txt{
+    grid-area: one;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.txt h1{
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: white;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 900;
+}
+h1{
+     color: #172767;
+     font-size: 36px;
+    margin-bottom: 30px;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 900;
+}
+
+h2{
+    color: #172767;
+     font-size: 26px;
+    margin-bottom: 30px;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 600;
+}
+
+p{
+    
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #555555;
+    font-family: "Inter", sans-serif;
+}
+
+.txt h1 span{
+    color: #172767;
+}
+
+.txt p{
+    font-size: 22px;
+    margin-bottom: 30px;
+    color: white;
+    font-family: "Inter", sans-serif;
+}
+
+.txt ol{
+    list-style: none;
+    margin-bottom: 30px;
+    font-weight: 600;
+    color: white;
+
+}
+.pic{
+    grid-area: two;
+    display: flex;
+    justify-content: center;
+}
+.pic img{
+    width:60%;
+    height: 450px;
+    border-radius: 15px;
+    margin-top: 50px;
+
+}
+
+.pic img:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    transition: 0.3s;
+}
+
+@media (max-width:768px){
+    header{
+         width: 100%;
+    height: 950px;
+    background: url('images/bg.jpg'), center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    .home-page{
+        display: grid;
+        height: 800px;
+        grid-template-areas:
+        'one one'
+        'two two';
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .txt{
+        grid-area: one;
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    .txt h1{
+        font-size: 28px;
+    }
+    .txt p{
+        font-size: 18px;
+    }
+    .pic img{
+        width:50%;
+        height: 300px;
+        margin-top: 20px;
+
+    }
+
+}
+
+
+
+
+section{
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    grid-template-areas:  
+    'left right';
+
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.hello{
+    width: 200%;
+}
+
+.about{
+    background-image: url('images/abt.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center, center;
+
+}
+
+.left{
+    grid-area: left;
+    display: flex;
+    justify-content: center;
+}
+
+.left img{
+    width:70%;
+    height: auto;
+    border-radius: 15px;
+    border: 10px solid #14E4D4;
+
+}
+
+.right{
+    grid-area: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}   
+
+
+.right h1{
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #172767;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 900;
+}
+
+.right p{
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #555555;
+    font-family: "Inter", sans-serif;
+}
+
+.right p a{
+    color: #4a6eff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+@media (max-width:768px){
+    section{
+        display: grid;
+        grid-template-areas:
+        'left left'
+        'right right';
+        justify-content: center;
+        margin: 0 auto;
+    }
+}
+
+
+.service{
+    padding: 30px;
+}
+
+.service h1{
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #172767;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 900;
+}
+.service p{
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #555555;
+    font-family: "Inter", sans-serif;
+}
+
+
+.card{
+    border: 2px solid #000;
+    border-radius: 10px;
+
+}
+
+.card:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    transition: 0.3s;
+    transform: translateY(-3);
+}
+
+.card img{
+    margin-bottom: 15px;
+    padding: 20px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.card-title{
+    font-size: 24px;
+    color: #172767;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 700;
+}
+
+.card-text{
+    font-size: 18px;
+    color: #555555;
+    font-family: "Inter", sans-serif;
+}
+
+article .card{
+    background-color: #6FB0CD33;
+}
+
+
+article .card img{
+    margin-bottom: 15px;
+    background-color: #005371;
+    border-radius: 50%;
+    padding: 5px;
+    border: none;
+    object-fit: cover;
+
+}
+
+article .card-title{
+    font-size: 20px;
+    color: #172767;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 700;
+}
+
+
+article  .card-text{
+    font-size: 16px;
+    color: #555555;
+    font-family: "Inter", sans-serif;
+}
+
+@media (max-width:768px){
+    .service{
+        text-align: center;
+    }
+}
+
+
+
+article .box .card img{
+    margin-bottom: 15px;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 5px;
+    border: none;
+    object-fit: cover;
+}
+
+
+article h1{
+    color: #172767;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 700;
+}
+
+article p{
+    font-size: 18px;
+    color: #555555;
+    font-family: "Inter", sans-serif;
+}
+
+main h1{
+    color: #172767;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 700;
+}
+
+main p{
+    font-size: 22px;
+    color: #555555;
+    font-family: "Inter", sans-serif;
+}
+
+main .card{
+    background-color: white;
+    border:  1px solid #ddd;
+    box-shadow: none;
+    box-shadow: 0px 0px 0px rgba(168, 168, 168, 0);
+}
+main .card:hover{
+    box-shadow: 0px 0px 0px rgba(126, 126, 126, 0);
+    transform: none;
+}
+
+main .card img{
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+
+}
+
+main .card-title{
+    font-size: 24px;
+    color: #172767;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+main .card-text{
+    font-size: 18px;
+    color: #555555;
+    font-family: "Inter", sans-serif;
+    margin-bottom: 20px;
+}
+
+main .card ul{
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 15px;
+
+}
+main .card ul li{
+    text-align: left;
+    margin-bottom: 20px;
+
+}
+
+.product .card{
+    border: none;
+    box-shadow: 0px 0px 4px 1px #ccc;
+    height: 500px;
+}
+
+
+
+.product img{
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border: none;
+}
+
+.product .card .card-text{
+    font-size: 22px;
+    font-weight: 400;
+    color: #172767;
+    font-family: "Inter", sans-serif;
+    margin-bottom: 10px;
+}
+
+
+
+@media (max-width:768px){
+    .product .card{
+        height: 350px;
+    }
+
+    .product .pro-tr{
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+}
+
+
+.explain h1{
+    color: #172767;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 700;
+}
+
+.explain p{
+    font-size: 18px;
+    color: #555555;
+    font-family: "Inter", sans-serif;
+    margin-bottom: 20px;
+
+}
+
+.explain .rect{
+    width: 100%;
+    height: 150px;
+    background: url('images/rect.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center, center;
+    border-radius: 20px;
+}
+
+.explain .rect .box{
+    width: 100%;
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+
+}
+
+.explain .rect1{
+    width: 100%;
+    height: 150px;
+    background: url('images/rect1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center, center;
+    border-radius: 20px;
+}
+
+.explain .rect1 .box{
+    width: 100%;
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+
+}
+
+
+
+@media(max-width:480px){
+#su{
+  
+    width: 38px;
+}
+#d{
+  
+    width: 85px;
+}
+p{
+    font-size: 14px;
+}
+
+#r{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+
+}
+#copy{
+    font-size: 14px;
+}
+}
+
+h3{
+    font-size: 40px;
+    font-weight: 900;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+}
+
+#otp{
+    background: linear-gradient(to right, #38BDF8 ,#172767 );
+    color: white;
+}
+#fc{
+    background-color: #D9D9D9;
+}
+.foot{
+    background-color: #1C88C3;
+}
+
+
+button{
+    padding: 15px 40px;
+    border: none;
+    background-color: #1C88C3;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+
+label{
+    color: #172767;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px 0;
+}
