@@ -82,6 +82,28 @@ h2{
     font-weight: 600;
 }
 
+@media (max-width:768px){
+
+    h1{
+     color: #172767;
+     font-size: 26px;
+    margin-bottom: 30px;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 700;
+}
+
+h2{
+    color: #172767;
+     font-size: 20px;
+     margin-left: 20px;
+    margin-bottom: 30px;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 600;
+}
+
+
+}
+
 p{
     
     font-size: 22px;
@@ -182,6 +204,12 @@ section{
 
 .hello{
     width: 200%;
+}
+
+@media (max-width:768px){
+    .hello{
+        width: 120%;
+    }
 }
 
 .about{
@@ -443,12 +471,28 @@ main .card ul li{
 @media (max-width:768px){
     .product .card{
         height: 350px;
+        text-align: center;
     }
 
     .product .pro-tr{
         margin: 0 auto;
         margin-top: 20px;
     }
+
+    .product img{
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    border: none;
+
+}
+    .product .card .card-text{
+    font-size: 18px;
+    font-weight: 400;
+    color: #172767;
+    font-family: "Inter", sans-serif;
+    margin-bottom: 10px;
+}
 }
 
 
@@ -464,6 +508,16 @@ main .card ul li{
     font-family: "Inter", sans-serif;
     margin-bottom: 20px;
 
+}
+
+
+@media (max-width:768px){
+    .explain h1{
+    color: #172767;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
 }
 
 .explain .rect{
@@ -534,6 +588,23 @@ h3{
     font-family: "Atkinson Hyperlegible", sans-serif;
 }
 
+
+@media (max-width:768px){
+    h3{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+}
+
+.card-text{
+    font-size: 14px;
+    color: #555555;
+    font-family: "Inter", sans-serif;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+}
+
 #otp{
     background: linear-gradient(to right, #38BDF8 ,#172767 );
     color: white;
@@ -556,10 +627,44 @@ button{
     border-radius: 10px;
 }
 
+@media (max-width:768px){
+
+    button{
+    padding: 10px 30px;
+    border: none;
+    background-color: #1C88C3;
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+}
+
 
 label{
     color: #172767;
     font-size: 16px;
     font-weight: 600;
     margin: 10px 0;
+}
+
+.button a{
+    border: 2px solid rgba(23, 39, 103, 1);
+    padding: 0px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+@media (max-width:768px){
+    .button a{
+    border: 2px solid rgba(23, 39, 103, 1);
+    padding: 0px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 10px;
+}
 }
