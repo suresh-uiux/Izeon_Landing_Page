@@ -17,7 +17,8 @@ body{
 }
 header{
     width: 100%;
-    height: 750px;
+    height: auto;
+    margin-bottom: 20px;
     background: url('images/bg.jpg'), center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -25,8 +26,9 @@ header{
 
 .index{
     width: 100%;
-    height: 750px;
+    height: auto;
     background-color: rgba(1,0,80,0.8);
+    padding-bottom: 40px;
 }
 
 .navbar{
@@ -112,6 +114,14 @@ p{
     font-family: "Inter", sans-serif;
 }
 
+@media (max-width:576px){
+    p{
+        font-size: 12px;
+    margin-bottom: 10px;
+    color: #555555;
+    font-family: "Inter", sans-serif;
+    }
+}
 .txt h1 span{
     color: #172767;
 }
@@ -150,7 +160,7 @@ p{
 
 @media (max-width:768px){
     header{
-         width: 100%;
+        width: 100%;
     height: 950px;
     background: url('images/bg.jpg'), center center;
     background-repeat: no-repeat;
@@ -174,10 +184,10 @@ p{
     }
 
     .txt h1{
-        font-size: 28px;
+        font-size: 22px;
     }
     .txt p{
-        font-size: 18px;
+        font-size: 16px;
     }
     .pic img{
         width:50%;
@@ -188,7 +198,19 @@ p{
 
 }
 
+@media (max-width:400px){
+    .pic img{
+        width:50%;
+        height: 200px;
+        margin-bottom: 30px;
 
+    }
+}
+
+
+.main{
+    background: rgba(255, 255, 255, 0.8);
+}
 
 
 section{
@@ -198,19 +220,9 @@ section{
     gap: 50px;
     grid-template-areas:  
     'left right';
-
-    background: rgba(255, 255, 255, 0.8);
 }
 
-.hello{
-    width: 200%;
-}
 
-@media (max-width:768px){
-    .hello{
-        width: 150%;
-    }
-}
 
 .about{
     background-image: url('images/abt.jpg');
@@ -327,6 +339,63 @@ section{
     font-family: "Inter", sans-serif;
 }
 
+
+@media (max-width:768px){
+
+    .service{
+    padding: 20px;
+}
+
+.service h1{
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #172767;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 900;
+}
+.service p{
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #555555;
+    font-family: "Inter", sans-serif;
+}
+
+
+.card{
+    border: 2px solid #000;
+    border-radius: 7px;
+
+}
+
+.card:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    transition: 0.3s;
+    transform: translateY(-3);
+}
+
+.card img{
+    margin-bottom: 10px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.card-title{
+    font-size: 20px;
+    color: #172767;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 700;
+}
+
+.card-text{
+    font-size: 12px;
+    color: #555555;
+    font-family: "Inter", sans-serif;
+}
+
+
+}
+
 article .card{
     background-color: #6FB0CD33;
 }
@@ -373,6 +442,9 @@ article .box .card img{
     object-fit: cover;
 }
 
+@media (max-width:768px){
+   
+}
 
 article h1{
     color: #172767;
@@ -470,8 +542,9 @@ main .card ul li{
 
 @media (max-width:768px){
     .product .card{
-        height: 350px;
+        height: auto;
         text-align: center;
+        padding: 5px;
     }
 
     .product .pro-tr{
@@ -487,12 +560,13 @@ main .card ul li{
 
 }
     .product .card .card-text{
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 14px;
+    font-weight: 600;
     color: #172767;
     font-family: "Inter", sans-serif;
-    margin-bottom: 10px;
 }
+
+
 }
 
 
@@ -571,12 +645,7 @@ p{
     font-size: 14px;
 }
 
-#r{
-    font-size: 20px;
-    font-weight: 600;
-    font-family: "Atkinson Hyperlegible", sans-serif;
 
-}
 #copy{
     font-size: 14px;
 }
@@ -668,3 +737,72 @@ label{
     font-size: 10px;
 }
 }
+
+
+
+
+
+
+
+
+.count{
+    display: flex;
+    padding: 10px;
+    justify-content: space-evenly;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.count .num{
+    padding: 20px 40px;
+    background-color: navy;
+    color: white;
+    border-radius: 20px;
+
+
+}
+
+
+
+.count .num h3{
+    font-size: 32px;
+}
+
+.count .num #r{
+    font-size: 18px;
+}
+
+
+
+@media (max-width:475px){
+    .count{
+    display: flex;
+    padding: 30px;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 10px;
+}
+.count .num{
+    padding: 30px;
+    background-color: navy;
+    color: white;
+    border-radius: 20px;
+
+}
+
+
+
+.count .num h3{
+    font-size: 22px;
+}
+
+.count .num #r{
+    font-size: 14px;
+}
+
+.mail{
+    font-size: 12px;
+}
+}
+
+
